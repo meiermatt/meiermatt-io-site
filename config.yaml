@@ -12,11 +12,10 @@ menu:
       weight: 1
 params:
   About: Hi I'm Matt Meier and I am currently working on this website. Right now I have only put up my resume and a game review. 
-  Feel free to use the drop down menu in the upper right corner to take a look. Links for my github, linkedin, and email are above.
+  Feel free to use the drop down menu in the upper right corner to take a look. Links for my github, and email are above.
   Email: meiermatt14@gmail.com
   GithubID: meiermatt
   HeaderHostname: home.io
   HeaderUsername: meiermatt
-  LinkedInID: https://www.linkedin.com/in/matthew-meier-737032168/
   Name: Matt Meier
   ProfilePicture: /me.jpg
