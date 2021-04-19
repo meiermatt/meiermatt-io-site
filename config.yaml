@@ -1,0 +1,22 @@
+baseurl: http://example.org/
+title: Hugo Website
+theme: hugo-theme-nix
+languageCode: en-us
+disqusShortname: your_disqus_shortname
+menu:
+  header:
+    - name: post
+      url: post
+      weight: 0
+    - name: resume
+      url: res
+      weight: 1
+params:
+  About: Hi I'm Matt Meier and I am currently making this website. Right now I have only put up my resume and a game review. Feel free to use the dop down menu to take a look. Links for my github, linkedin, and email are linked above.
+  Email: meiermatt14@gmail.com
+  GithubID: meiermatt
+  HeaderHostname: mattymy.io
+  HeaderUsername: matt
+  LinkedInID: your_linkedin
+  Name: Matt Meier
+  ProfilePicture: /me.jpg

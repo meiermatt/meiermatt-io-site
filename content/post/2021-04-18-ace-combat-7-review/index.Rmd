@@ -1,0 +1,31 @@
+---
+title: Ace Combat 7
+author: ''
+date: '2021-04-17'
+slug: []
+categories: []
+tags: []
+---
+
+```{r, message=FALSE, echo=FALSE}
+library(tidyverse)
+library(gridExtra)
+library(patchwork)
+c = read_csv("graph.csv")
+```
+
+
+```{r,echo=FALSE,message=FALSE}
+tab = c %>% group_by(Squadron) %>%
+  summarise(Total_Missions = n(),Best_Score = max(Enjoyment),Worst_Score=min(Enjoyment),Average_Score=mean(Enjoyment))%>%tableGrob()
+
+c = read_csv("graph.csv")
+c$`Mission Name` = factor(c$`Mission Name`, levels = c$`Mission Name`)
+
+pc = c %>% ggplot(aes(x = `Mission Name`,y=Enjoyment,color=Squadron,fill=Squadron))+
+  geom_bar(stat="identity")+theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1))
+
+pc/tab
+```
+
+Ace combat 7 is a flight simulation action game developed by Bandai Namco. 
