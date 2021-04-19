@@ -13,7 +13,11 @@ library(gridExtra)
 library(patchwork)
 c = read_csv("graph.csv")
 ```
-
+Ace combat 7 is a flight simulation action game developed by Bandai Namco. The term `flight sim` is being very loosely used in this context as the controls are very arcade like and
+planes will be carrying hundreds of missiles as well as rail guns or lasers.
+However that is why most people find the game so enjoyable. It's always a great time to slap a rail gun onto a F-18 and take on 4 enemy squadrons single handedly.
+My overall impression of the game is an 8/10, go play it.
+However, I thought it would be interesting to take a more granular approach and look at what I think of certain missions. To help with this, I plotted out my overall enjoyment of all the missions in chronological order based on the story.
 
 ```{r,echo=FALSE,message=FALSE}
 tab = c %>% group_by(Squadron) %>%
@@ -27,5 +31,31 @@ pc = c %>% ggplot(aes(x = `Mission Name`,y=Enjoyment,color=Squadron,fill=Squadro
 
 pc/tab
 ```
+This review will remain mostly spoiler free, but describing some of the general plot points will be important for this next part.
+You play as a pilot that gets transferred to different squadrons as the story progresses.
+I mention this specifically because a large part of the story is presented through mission briefings and radio chatter during missions. The characters giving these all change as you play your way through the game.
+I wanted to see if my opinions on missions had any correlation with which squadron they take place with.
 
-Ace combat 7 is a flight simulation action game developed by Bandai Namco. 
+The squadron with the lowest score is Mage. This makes sense because they are very much the tutorial squad.
+Most of these missions involve taking down bombers that barely fight back.
+The wingmen and AWACS you get paired with are fairly unremarkable. However, this may be due to the fact that you're only with them for 4 missions.
+Even the high point of this arc is really just about setting the player up for the next squadron they get sent to.
+
+Spare squadron is the penal unit the player finds themselves on after leaving Mage.
+The silliness of the plan to give a bunch of war criminals access to several multi-million dollar jets is only the first of many aspects I loved about my time with Spare squad.
+The missions ramp up in difficulty and enjoyment. Most importantly is that all the characters you interact with at this time are memorable.
+Mostly due to the conflict that exists between the squad and their jailers/commanding officers.
+A perfect example of this is the first mission you play with them, 444.
+During the mission briefing several pilots get sent to solitary confinement, on the runway one of your wingmen ignores air traffic control to force a takeoff and tells them to 'go to hell,' and when you finally get in the air you're told to just fly around with your weapons disabled to draw enemy fire.
+In the span of less than a minute more characterization has been done for Spare than Mage.
+The constant bickering and banter heard over the radio as you play these missions is part of why the missions with Spare have the highest average rating.
+
+Unfortunately, all of that development goes down the drain when you leave Spare and are placed on Strider.
+You're with them for the rest of the game and half of all the missions.
+Despite this, I honestly couldn't tell you anything about the wingmen you're with for the remainder of the game.
+The time spent with Strider scores well mostly because of the several boss battles and missions having some of the best [songs](https://www.youtube.com/watch?v=2o_XGQ3EcrI) in the game.
+
+Story points aside, Ace Combat is an incredibly fun time and I would highly recommend it.
+
+
+
