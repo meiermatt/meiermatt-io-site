@@ -13,7 +13,8 @@ library(gridExtra)
 library(patchwork)
 c = read_csv("graph.csv")
 ```
-Ace combat 7 is a flight simulation action game developed by Bandai Namco. The term `flight sim` is being very loosely used in this context as the controls are very arcade like and
+
+Ace combat 7 is a flight simulation action game developed by Bandai Namco. The term flight sim is being very loosely used in this context as the controls are very arcade like and
 planes will be carrying hundreds of missiles as well as rail guns or lasers.
 However that is why most people find the game so enjoyable. It's always a great time to slap a rail gun onto a F-18 and take on 4 enemy squadrons single handedly.
 My overall impression of the game is an 8/10, go play it.
@@ -31,6 +32,7 @@ pc = c %>% ggplot(aes(x = `Mission Name`,y=Enjoyment,color=Squadron,fill=Squadro
 
 pc/tab
 ```
+
 This review will remain mostly spoiler free, but describing some of the general plot points will be important for this next part.
 You play as a pilot that gets transferred to different squadrons as the story progresses.
 I mention this specifically because a large part of the story is presented through mission briefings and radio chatter during missions. The characters giving these all change as you play your way through the game.
